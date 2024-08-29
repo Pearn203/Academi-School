@@ -1,0 +1,91 @@
+/* Teacher.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.teacher {
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 0 0 20px;
+}
+
+.teacher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.teacher-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.teacher-header input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F3F4FF;
+  outline: none;
+}
+
+.teacher-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.teacher-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.teacher-avatar1 {
+  width: 80px;
+  height: 80px;
+  background-color: #C7C4FF;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.teacher-info1 h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.teacher-info1 p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+.teacher-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.teacher-actions button {
+  background-color: #7479BF;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.teacher-actions button:hover {
+  background-color: #5f63a1;
+}
+
+.teacher-actions button:focus {
+  outline: none;
+}

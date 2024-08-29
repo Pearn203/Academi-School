@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.Sidebar {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 250px;
+    background-color: #4D44B5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:  20px 0 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.logo-icon {
+    background-color: #FF6B6B;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.SideBarList {
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+    list-style-type: none;
+}
+
+.SideBarList .row {
+    width: calc(100% - 50px);
+    height: 60px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    padding-left: 20px;
+    color: white;
+    margin-bottom: 10px;
+    transition: background-color 0s ease;
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.SideBarList .row:hover, .SideBarList .row#active {
+    cursor: pointer;
+    background-color: #F3F4FF;
+    border-radius: 50px 0 0 50px;
+    color: #4D44B5;
+}
+
+.SideBarList .row#active #icon, .SideBarList .row#active #title {
+    color: #4D44B5;
+}
+
+.row #icon {
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+}
+
+.row #title {
+    flex: 70%;
+    font-size: 16px;
+    color: inherit;
+}
+
+.footer {
+    margin-top: auto;
+    color: white;
+    text-align: center;
+   
+    font-size: 12px;
+}
+
+.footer p {
+    margin: 0;
+}
